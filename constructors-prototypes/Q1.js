@@ -25,3 +25,4 @@ function B() {
 console.log(A()); //Object {  }
 console.log(B()); //Object {  }
 console.log(A() == B()); //true
+console.log(A() === B()); //true
