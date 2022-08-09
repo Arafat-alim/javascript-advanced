@@ -13,7 +13,7 @@ console.log(student1);
 console.log(student2);
  */
 
-function createStudent(name, marks, rollNo) {
+function Student(name, marks, rollNo) {
   //let student = {}; // new Object()
   this.name = name;
   this.marks = marks;
@@ -22,7 +22,7 @@ function createStudent(name, marks, rollNo) {
 }
 
 // here new keyword intialise the object and at the end return an object for us
-let student1 = new createStudent("abcd", 1, 54);
-let student2 = new createStudent("poiu", 2, 72);
+let student1 = new Student("abcd", 1, 54);
+let student2 = new Student("poiu", 2, 72);
 console.log(student1);
 console.log(student2);
