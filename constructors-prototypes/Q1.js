@@ -1,3 +1,5 @@
+//! Q. 1
+/*
 "use strict";
 
 function bike() {
@@ -10,3 +12,16 @@ let obj = {
 };
 
 obj.print(); //yamaha
+*/
+//! Q. 2
+let obj = {};
+function A() {
+  return obj;
+}
+function B() {
+  return obj;
+}
+
+console.log(A()); //Object {  }
+console.log(B()); //Object {  }
+console.log(A() == B()); //true
