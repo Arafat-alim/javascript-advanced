@@ -6,7 +6,7 @@ let getFullName = function (city, state) {
   ); //this keyword refers to the name object
 };
 
-// ..
+//..
 
 let name1 = {
   firstName: "Arafat",
