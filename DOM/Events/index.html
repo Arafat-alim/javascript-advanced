@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation: Events</title>
+    <style>
+      body {
+        background-color: darkblue;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .boxes {
+        border: 1px solid white;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* height: 500px; */
+      }
+      button {
+        margin-bottom: 30px;
+        border: 1px solid white;
+        background-color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>DOM Manipulation Events</h1>
+    <div class="container">
+      <div class="boxes box-1">
+        <h1 id="heading">Example 1</h1>
+        <button onclick="myFun()">Enter</button>
+      </div>
+      <div class="boxes box-2">
+        <h1 class="heading">Example 2</h1>
+        <button class="btn-2">Enter</button>
+      </div>
+      <div class="boxes box-3">
+        <h1 class="heading">Example 3</h1>
+        <button class="btn-3">Enter</button>
+      </div>
+    </div>
+    <script src="events.js"></script>
+  </body>
+</html>
