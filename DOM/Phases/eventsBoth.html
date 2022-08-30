@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events Both</title>
+    <style>
+      body * {
+        border: 1px solid black;
+        margin: 40px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="grandParent">
+      Form
+      <div id="parent">
+        Parent
+        <p id="child">Child</p>
+      </div>
+    </form>
+
+    <script src="eventsBoth.js"></script>
+  </body>
+</html>

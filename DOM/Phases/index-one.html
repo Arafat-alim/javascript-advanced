@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM - Manipulation</title>
+    <style>
+      body {
+        background-color: azure;
+
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .div1 {
+        border: 1px solid red;
+        padding: 30px 30px;
+        cursor: pointer;
+        text-align: center;
+      }
+      .div2 {
+        border: 1px solid red;
+        padding: 30px 30px;
+        cursor: pointer;
+        text-align: center;
+      }
+      button {
+        border: 1px solid red;
+        padding: 30px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      1
+      <div class="div2">
+        2
+        <button id="button">CLick Me</button>
+      </div>
+    </div>
+    <script src="propagation.js"></script>
+  </body>
+</html>
