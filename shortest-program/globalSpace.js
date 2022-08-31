@@ -9,9 +9,9 @@ function b() {
 
 //! Here a is the global space
 // How to access global space
-console.log(window.a);
-console.log(a);
-console.log(this.a);
+console.log(window.a); //17
+console.log(a); // 17
+console.log(this.a); // 17
 
 //! Not a global space is function b
 //! How to access variable x?
