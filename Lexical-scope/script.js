@@ -10,3 +10,4 @@ function a() {
 var b = 14;
 
 a(); //14
+bhusgbashdsagb;
