@@ -12,6 +12,9 @@ console.log(arr.prototype); // array constructor
 let obj1 = {
   name: "Arafat",
   city: "Kolkata",
+  getIntro: function () {
+    console.log(this.name + " " + this.city);
+  },
 };
 
 console.log(obj1.__proto__); // {} object
