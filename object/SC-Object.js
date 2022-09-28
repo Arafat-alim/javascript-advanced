@@ -12,6 +12,9 @@ console.log(person); //{ name: 'Hamed', age: 17 }
 console.log(copiedPerson); //{ name: 'Hamed', age: 17 }
 console.log(newPerson); //{ name: 'Arafat', age: 17 }
 
+console.log(person === newPerson); //false
+console.log(person === copiedPerson); //true
+
 //! Shallow copy - Object.assign() -- Object
 const obj2 = { name: "Mom", age: 21 };
 const copyObj2 = obj2;
@@ -23,3 +26,6 @@ obj2.name = "Roman";
 console.log(obj2); //{ name: 'Roman', age: 21 }
 console.log(copyObj2); //{ name: 'Roman', age: 21 }
 console.log(newObj2); // { name: 'Mom', age: 21 }
+
+console.log(obj2 === copyObj2); //false
+console.log(obj2 === newObj2); // true
