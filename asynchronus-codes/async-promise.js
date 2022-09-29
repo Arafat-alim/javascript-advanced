@@ -18,7 +18,7 @@ const fetchPhotos = (username) => {
 };
 
 const fetchDetails = (photo) => {
-  return new Promise(() => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log(`Now we have the ${photo}`);
       resolve("Details...");
@@ -28,6 +28,6 @@ const fetchDetails = (photo) => {
 
 // ! Calling the function
 fetchUser("Arafat")
-  .then((user) => fetchPhotos(user))
+  .then((user) => fetchPhotos(user.username))
   .then((photos) => fetchDetails(photos[0]))
   .then((details) => console.log(`Your Photo details are - ${details}`));
