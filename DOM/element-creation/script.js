@@ -26,3 +26,6 @@ console.log(fav.nextElementSibling);
 
 //! parent element
 console.log(fav.parentElement);
+
+//! remove element -- method
+heading.remove();
