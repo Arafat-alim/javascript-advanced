@@ -14,3 +14,7 @@ function two() {
 }
 
 one();
+// output
+// FUnction 1 is called
+// Function 1 part 2
+// Function 2 is called
