@@ -2,7 +2,9 @@
 //! Callback
 
 const fetchUser = (username, callback) => {
+  console.log("fetching ....");
   setTimeout(() => {
+    console.log(`Fetched username is - ${username}`);
     callback({ user: username });
   }, 3000);
 };
@@ -10,3 +12,8 @@ const fetchUser = (username, callback) => {
 fetchUser("Arafat", (user) => {
   console.log(`Welcome ${user.user}`); //Welcome Arafat
 });
+
+//! Output
+// fetching...
+// Fetched username is Arafat
+// Welcome Arafat
