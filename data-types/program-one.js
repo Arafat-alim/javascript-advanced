@@ -27,3 +27,13 @@ console.log(typeof sym2); //symbol
 
 console.log(typeof null); //object
 console.log(typeof NaN); // number
+
+//! 2. Complex Data types
+const arr = [];
+console.log(typeof arr); // object
+const obj = {};
+console.log(typeof obj); // object
+const map = new Map();
+console.log(typeof map); // object
+const set = new Set();
+console.log(typeof set); // object
