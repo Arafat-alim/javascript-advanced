@@ -5,9 +5,11 @@ const str2 = "goku";
 
 function isIsogram(string) {
   const lowerStr = string.toLowerCase();
-  const result = lowerStr
-    .split("")
-    .every((letter, index) => lowerStr.indexOf(letter) === index);
+  const result = lowerStr.split("").every(
+    (letter, index) =>
+      // console.log(letter, index) || lowerStr.indexOf(letter) === index
+      lowerStr.indexOf(letter) === index
+  );
   return result;
 }
 console.log(isIsogram(str1)); //false
